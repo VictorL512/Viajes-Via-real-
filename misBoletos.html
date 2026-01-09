@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Boletos - Central "Vía Real"</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .search-box {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .search-box input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .ticket-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ticket-info h3 { margin: 0 0 10px 0; color: #004e92; }
+        .ticket-info p { margin: 5px 0; color: #555; }
+        .ticket-seat {
+            text-align: center;
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 100px;
+        }
+        .ticket-seat span { font-size: 2em; font-weight: bold; color: #004e92; display: block; }
+        .ticket-seat small { color: #666; text-transform: uppercase; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+
+    <header class="header-titulo" style="padding: 40px 20px; margin-bottom: 30px; background: linear-gradient(135deg, #004e92, #000428); color: white; text-align: center;">
+        <div class="contenido-header">
+            <h1>Mis Boletos</h1>
+            <p>Consulta tu historial de viajes</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div style="margin-bottom: 20px;">
+            <a href="index.html" class="btn" style="background-color: #6c757d;">&larr; Volver al Inicio</a>
+        </div>
+
+        <div class="search-box">
+            <form action="#" method="GET">
+                <label for="curp" style="display: block; margin-bottom: 10px;">Ingresa tu CURP para buscar tus boletos:</label>
+                <input type="text" name="curp" id="curp" placeholder="Ej: ABCD123456..." required>
+                <input type="submit" value="Buscar" class="btn" style="margin-left: 10px;">
+            </form>
+        </div>
+
+        <h3>Resultados de ejemplo (Vista Estática HTML):</h3>
+        
+        <div class="ticket-card">
+            <div class="ticket-info">
+                <h3>Ciudad de México &rarr; Guadalajara</h3>
+                <p><strong>Fecha:</strong> 2026-01-20 <strong>Hora:</strong> 14:30:00</p>
+                <p><strong>Autobús:</strong> Volvo 9800</p>
+                <p><strong>Tarifa:</strong> Adulto ($1200)</p>
+                <p><small>Comprado el: 2026-01-08</small></p>
+            </div>
+            <div class="ticket-seat">
+                <small>Asiento</small>
+                <span>12</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
